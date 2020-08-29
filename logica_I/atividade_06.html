@@ -1,0 +1,30 @@
+<meta charset = "UTF-8">
+
+<script>
+
+	function pulaLinha() {
+
+		document.write("<br><br>");
+
+	}
+
+	function mostra (frase) {
+
+		document.write (frase);
+
+		pulaLinha ();
+
+	}
+
+	var valorInicial = 2;
+
+	while ( valorInicial <= 100) {
+
+		mostra ( valorInicial );
+		
+		valorInicial = valorInicial + 2;
+	}
+
+	mostra ("Fim");
+
+</script>

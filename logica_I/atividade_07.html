@@ -1,0 +1,38 @@
+<meta charset = "UTF-8">
+
+<script>
+
+	function pulaLinha() {
+
+		document.write("<br><br>");
+
+	}
+
+	function mostra (frase) {
+
+		document.write (frase);
+
+		pulaLinha ();
+
+	}
+
+	var valorInicial = 30;
+
+	while ( valorInicial <= 40) {
+
+		if ( valorInicial != 33 && valorInicial != 37 ) {
+
+			mostra ( valorInicial );
+		
+			valorInicial = valorInicial + 1;
+
+		} else {
+
+			valorInicial = valorInicial + 1;
+
+		}
+	}
+
+	mostra ("Fim");
+
+</script>

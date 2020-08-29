@@ -1,0 +1,34 @@
+<meta charset="UTF-8">
+
+<script>
+
+	function pulaLinha () {
+		
+		document.write ("<br>");
+		
+	}
+
+	
+	function mostra (frase) {
+
+		document.write (frase);
+		
+		pulaLinha ();
+	
+	}
+
+
+	var dataNascimentoMarcelo = 1990
+	
+	var dataNascimentoCamila = 1992
+
+	var diferencaIdade = (dataNascimentoMarcelo - dataNascimentoCamila)
+		
+	
+	mostra ("Marcelo Nasceu em " + dataNascimentoMarcelo);	
+
+	mostra ("Camila Nasceu em " + dataNascimentoCamila);
+
+	mostra ("Nossa diferença de idade é de " + ( diferencaIdade * (-1)) + " Anos");
+
+</script>

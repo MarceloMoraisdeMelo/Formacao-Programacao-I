@@ -1,0 +1,42 @@
+<canvas width = "600" height = "400"></canvas>
+
+<script>
+
+	function fracao ( x , y ) {
+
+		var tela = document.querySelector ("canvas");
+		var pincel = tela.getContext ("2d");
+
+		var totalQuadrado = x;
+		var quadradoCheio = y;
+
+		function desenhaQuadrado ( x , y , tamanho , cor ) {  
+
+			pincel.fillStyle = cor;
+			pincel.fillRect ( x , y , tamanho , tamanho );
+		}
+
+		for ( var x = 0; x < (quadradoCheio * 50) ; x = x + 50 ) {
+
+			desenhaQuadrado ( x , 0 , 50 , "green" );
+
+		}
+		
+		function desenhaVazio ( x , y , tamanho , cor ) {  
+
+			pincel.strokeStyle = "black";
+			pincel.strokeRect ( x , y , tamanho , tamanho);
+		}
+
+		for ( var x = 0; x < (totalQuadrado * 50) ; x = x + 50 )  {
+
+			desenhaVazio ( x , 0 , 50 );
+
+		}
+	}
+
+	fracao ( 4 , 1 );
+
+
+</script>
+

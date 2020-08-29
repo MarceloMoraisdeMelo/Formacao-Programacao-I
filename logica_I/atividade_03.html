@@ -1,0 +1,37 @@
+<meta charset = "UTF-8">
+
+<script>
+
+	function pulaLinha (){
+
+		document.write("<br>");
+
+	}
+
+	
+	function mostra (frase){
+
+		document.write(frase);
+	
+		pulaLinha();
+
+	}
+
+	var mediaIdadeCasalFazNenem = 28
+	
+	var portuguesesChegaramBrasil = 1500
+
+	var primeiraGeracao = 1528
+
+	var segundaGeracao = 1556
+
+	var anoAtual = 2020
+
+	var quantasGeraçõesHoje = Math.round((anoAtual - portuguesesChegaramBrasil) / mediaIdadeCasalFazNenem)
+
+	
+	mostra ("Em média, um casal tem filhos quando atinge a idade de " + mediaIdadeCasalFazNenem + " anos." + "<br>" + "Seguindo essa média, se os portugueses chegaram em " + portuguesesChegaramBrasil + " no Brasil, <br>Então a primeira geração de brasileiros surgiu em " + primeiraGeracao + ", a segunda em " + segundaGeracao + " até o ano atual.<br> Portanto quantas gerações se passaram?");
+
+	mostra ("Se passaram ao todo " + quantasGeraçõesHoje + " gerações.");
+
+</script>
